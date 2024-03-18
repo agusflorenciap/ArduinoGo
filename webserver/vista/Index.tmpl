@@ -1,0 +1,35 @@
+{{define "Index"}}
+{{template "Header"}}
+{{template "Menu"}}
+<h2 align="center">Listado de Mediciones Ultrasonido</h2>
+<div class="container">
+<table class="table table-borderer table-hover" border="1">
+<thead>
+<tr>
+<th>Id</th>
+<th>Fecha y Hora</th>
+<th>Distancia (en cm)</th>
+<th colspan="1">Detalle</th>
+</tr>
+
+</thead>
+<tbody>
+{{range .}}
+<tr>
+
+<td>{{.IdDistancia}}</td>
+<td>{{.Fecha}}</td>
+<td>{{.Distancia}}</td>
+<td><a href="/show?id"={{.IdDistancia}}">Ver</a></td>
+
+</tr>
+{{end}}
+
+</tbody>
+
+</table>
+
+
+</div>
+{{template "Footer"}}
+{{end}}
