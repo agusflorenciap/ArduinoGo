@@ -21,7 +21,7 @@ Los datos recogidos se almacenan en una base de datos MySQL, corriendo en una VM
 
 <br />
 
-<h1>[ENG] Arduino and Go in a Distributed Environment</h1>
+<h1>[ENG] Arduino and Go in a distributed environment</h1>
 
 <h2>Description</h2>
 The project involved using Golang and Arduino in a distributed environment. The Arduino, connected via USB, collected information using an ultrasonic sensor. An Ethernet module was also used to facilitate its access to the work network. The collected data was stored in a MySQL database running on a VM. The web server was developed in Go, and the registered measurements were visualized on a web page.
